@@ -1,74 +1,104 @@
-charset
+@charset "UTF-8";
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+:root {
+    --cor01: #1a1a2e;
+    --cor02: #16213e;
+    --cor03: #e42e4c;
+    --cor04: #ece5e5;
 }
 
 body {
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--cor04);
+    line-height: 1.2;
 }
 
 header {
-    background-color: #1a1a2e;
+    min-height: 150px;
+    background-color: var(--cor01);
+    padding: 80px;
+}
+
+header>h1 {
+    color: #ffff;
+    font-size: 5.3em;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+}
+
+header>p {
+    color: #ffff;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.cadastro:hover {
+    background-color: var(--cor03);
     color: #fff;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
+nav {
+    margin: 0px 0px 0px -70px;
+    padding: 10px;
+    background-color: var(--cor01);
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
+    color: #ffff;
     padding: 8px 15px;
+    text-decoration: none;
 }
 
-.btn-cadastrar {
-    background-color: #e94560;
+nav a:hover {
+    background-color: var(--cor02);
     border-radius: 5px;
-    color: #fff;
 }
-
-.banner {
-    background-color: #16213e;
-    color: #fff;
+section{
+    border-radius: 10px;
+    width: 315px;
+    height: 200px;
+    padding-bottom: 10px;
+    margin: 40px 0px 10px 10px;
     text-align: center;
-    padding: 60px 20px;
 }
-
-.banner-texto h1 {
-    font-size: 48px;
+section.banner {
+    color: #ffff;
+    padding: 60px 20px;
+    background-color: var(--cor02);
     margin-bottom: 20px;
 }
-
-.banner-texto p {
-    font-size: 18px;
-    margin-bottom: 30px;
+.banner-texto h1{
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    margin-top: -23px;
+    font-variant: small-caps;
 }
-
-.btn-principal {
-    background-color: #e94560;
+.banner-texto p{
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+.principal{
+    background-color: var(--cor03);
     color: #fff;
     padding: 10px 20px;
+    margin-top: 10px;
     text-decoration: none;
     border-radius: 5px;
+   
 }
-
+.principal:hover{
+    background-color: #ed405d;
+   
+}
 .destaques {
     display: flex;
     justify-content: space-around;
@@ -82,19 +112,4 @@ nav a {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: 30%;
-}
-
-footer {
-    background-color: #111;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-footer .social a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-}
+    width: 30%;}
